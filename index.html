@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="assets/videos/default.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Weather App UI -->
+  <div class="container">
+    <div class="weather-card">
+      
+      <!-- Left: Main Weather Info -->
+      <div class="left-section">
+        <div class="left-content">
+          <h2>Weather App</h2>
+          <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city">
+            <button onclick="getWeather()">Search</button>
+          </div>
+          <div class="weather-info">
+            <h3 id="city-name">Weather App</h3>
+            <p id="description">Search for a city</p>
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon">
+            <h1 id="temperature">--°C</h1>
+            <div id="error-message" class="error-message"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle Line -->
+      <div class="divider"></div>
+
+      <!-- Right: Forecast Section -->
+      <div class="right-section">
+        <div class="forecast">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
