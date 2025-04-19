@@ -9,7 +9,7 @@ window.onload = function() {
 async function getWeather() {
   const cityInput = document.getElementById('city-input');
   const city = cityInput.value.trim() || 'Mumbai';
-  const apiKey = '85fceacef90a9310ebccaf2bea6e48ac';
+  const apiKey = '123456789';
   const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   
   // Save city to localStorage
